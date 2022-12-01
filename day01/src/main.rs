@@ -1,12 +1,5 @@
 use std::fs;
 
-fn get_maximum(values: &Vec<u32>) -> Option<(usize, &u32)> {
-    values.iter()
-        .enumerate()
-        .max_by(|(_, a), (_, b)| a.partial_cmp(b)
-        .expect("unable to compare")).map(|(index, value)| (index, value))
-}
-
 fn main() {
     let file_content = fs::read_to_string("input.txt")
         .expect("Couldn't find input file.");
@@ -32,15 +25,15 @@ fn main() {
         elves_calories.push(calories_accumulator);
     }
 
-    let most_calories = get_maximum(&elves_calories)
-        .expect("Couldn't find maximum value");
-
-
-    println!("part 1: {}", most_calories.1);
-
     elves_calories
         .sort_by(|a, b| b.partial_cmp(a)
             .expect("Not comparable."));
+
+    let most_calories = elves_calories[0];
+
+    println!("part 1: {}", most_calories);
+
+    
     let top_three: u32 = elves_calories
         .iter()
         .take(3)
