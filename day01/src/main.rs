@@ -32,7 +32,6 @@ fn main() {
     let most_calories = elves_calories[0];
 
     println!("part 1: {}", most_calories);
-
     
     let top_three: u32 = elves_calories
         .iter()
