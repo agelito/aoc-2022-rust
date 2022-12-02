@@ -9,7 +9,7 @@ More information about Advent of Code can be found at the official [website](htt
 | Day | Stars |
 |---|---|
 | 01| ⭐⭐|
-| 02| |
+| 02| ⭐⭐|
 | 03| |
 | 04| |
 | 05| |
