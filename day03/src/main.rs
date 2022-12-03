@@ -54,9 +54,9 @@ fn main() {
             group_badge_priority
         }).collect();
 
-    if let Some(total_group_priority) = group_priorities.iter()
+    let total_group_priority = group_priorities.iter()
         .map(|v| *v)
-        .reduce(|acc: u32, p: u32| acc + p) {
-        println!("part 2: {:?}", total_group_priority);
-    }
+        .reduce(|acc: u32, p: u32| acc + p).unwrap_or(0);
+
+    println!("part 2: {:?}", total_group_priority);
 }
