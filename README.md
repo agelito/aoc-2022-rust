@@ -10,7 +10,7 @@ More information about Advent of Code can be found at the official [website](htt
 |---|---|
 | 01| ⭐⭐|
 | 02| ⭐⭐|
-| 03| |
+| 03| ⭐⭐|
 | 04| |
 | 05| |
 | 06| |
